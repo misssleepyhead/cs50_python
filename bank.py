@@ -1,12 +1,19 @@
-greeting = input ("Greeting: ")
+def main():
+    x = input("Greetings: ")
+    tip = value(x)
+    print(f"${tip}")
 
-greeting = greeting.lower()
+def value(greeting):
+   greeting = greeting.lower().strip()
+   
+   if "hello" in greeting:
+        return (0)
 
-if "hello" in greeting:
-    print ("$0")
+   elif greeting[0] == "h":
+        return (20)
 
-elif greeting[0] == "h":
-    print ("$20")
-else:
-    print ("$100")
+   else:
+        return (100)
 
+if __name__ == "__main__":
+    main()
